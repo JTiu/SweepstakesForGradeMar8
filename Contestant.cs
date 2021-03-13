@@ -14,23 +14,18 @@ namespace SweepstakesFeb9
         public string EmailAddress { get; set; }
         public string RegistrationID { get; set; }
 
-        //Constructor SPAWN
-
-        public Contestant(string FirstName, string LastName, string EmailAddress, string RegistrationID)
-        {
-        //this.FirstName = UserInterface.GetFirstName(); 
-             
-        // for each variable, we want a method inside of the user interface class, that returns the correct string value
-        //    //created user interface class, ceated GetFirstName method
-         this.FirstName = FirstName;
-         this.LastName = LastName;
-         this.EmailAddress = EmailAddress;
-         this.RegistrationID = RegistrationID;
-        }
-
-        public Contestant()
-        {
-        }
         ////Method CAN DO
+        
+        public Contestant CreateContestant()
+        {
+            Contestant contestant1 = new Contestant();
+            contestant1.FirstName = UserInterface.GetUserFirstName();
+            contestant1.LastName = UserInterface.GetUserLastName();
+            contestant1.EmailAddress = UserInterface.GetUserEmailAddress();
+            contestant1.RegistrationID = UserInterface.GetUserRegistrationNumber();
+            Console.WriteLine("Contestant name: " + contestant1.FirstName + " " + contestant1.LastName + ", Email:" + contestant1.EmailAddress + "; RegID: " + contestant1.RegistrationID);
+
+            return contestant1;
+        }
     }
 }

@@ -11,11 +11,9 @@ namespace CourtHearing
     {
         public static string GetUserFirstName()
         {
-            Console.WriteLine("what is your first name?");
+            Console.WriteLine("What is your first name?");
             var FirstName = Console.ReadLine();
-            //Console.WriteLine($"The first name of contestant is: {FirstName}");
-           
-                return FirstName;
+            return FirstName;
         }
         public static string GetUserLastName()
         {
@@ -35,23 +33,13 @@ namespace CourtHearing
             var RegistrationID = Console.ReadLine();
             return RegistrationID;
         }
-
-
-
-
-        public static void GetUserEmail(string EmailAddress)
+        public static string GetUserCourtDate()
         {
-            Console.WriteLine($"The contestant's email address is: {EmailAddress}");
+            Console.WriteLine("When is your court date?");
+            var CourtDate = Console.ReadLine();
+            return CourtDate;
         }
-        public static void GetBothNames(string FirstName, string LastName)
-        {
-            Console.WriteLine($"The next contestants' names are: {FirstName} {LastName}");
-        }
-        public static void GetRegistrationNumber(int RegistrationNumber) 
-        {
-            Console.WriteLine($"The next contestants' registration is {RegistrationNumber}");
-            Console.ReadLine();
-        }
+
 
     }
 }

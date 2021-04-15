@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepstakesFeb9
+namespace CourtHearing
 {
     public class Sweepstakes
         //As a developer, I want to create a Sweepstakes class that uses the Dictionary data structure as an underlying structure.
@@ -15,15 +15,15 @@ namespace SweepstakesFeb9
         {
             this.name = Name;
         }
-        public void RegisterContestant(Contestant contestant) 
+        public void RegisterContestant(CourtParticipant contestant) 
         {
 
         }
-        //public Contestant PickWinner()
+        //public CourtParticipant PickWinner()
         //{
-        //    return new Contestant();
+        //    return new CourtParticipant();
         //}    
-        public void PrintContestantInfo(Contestant contestant)
+        public void PrintContestantInfo(CourtParticipant contestant)
         {
                 
         }
@@ -44,7 +44,7 @@ namespace SweepstakesFeb9
         
         
 
-        //Dictionary<int Contestant>  = new Dictionary<int>();
+        //Dictionary<int CourtParticipant>  = new Dictionary<int>();
         //animals.Add("cat", "feline");
         //animals.Add("dog", "canine");
     

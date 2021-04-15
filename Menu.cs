@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepstakesFeb9
+namespace CourtHearing
 {
     public class Menu
     {
@@ -22,7 +22,7 @@ namespace SweepstakesFeb9
 
         public int DrawMenu()  //going to draw my menu of choices, contestant, sweep, winner
         {
-            Console.WriteLine("James' Lucky Winners Sweepstakes");
+            Console.WriteLine("JT's Lucky Winner Sweepstakes");
             Console.WriteLine("------------------------------------");
             Console.WriteLine();
             Console.WriteLine("1. Enter in contestant information");
@@ -33,7 +33,7 @@ namespace SweepstakesFeb9
             Console.WriteLine("6. List Winners");
             Console.WriteLine("7. Exit Application");
 
-            bool invalidEntry = true;
+            bool invalidEntry = true; //this bool insures that an invalid entry is not entered
             string result = "";
 
             while(invalidEntry == true)
@@ -46,7 +46,7 @@ namespace SweepstakesFeb9
                 }
                 else
                 {
-                    Console.WriteLine("Entry was incorrect, please enter 1-6");
+                    Console.WriteLine("Entry was incorrect, please enter 1-7");
                 }
             }
 
@@ -82,8 +82,8 @@ namespace SweepstakesFeb9
             switch(option)
             {
                 case 1:
-                    Contestant contestant = new Contestant();
-                    contestant.CreateContestant();
+                    CourtParticipant contestant = new CourtParticipant();
+                    contestant.CreateCourtParticipant();
                     break;
                 case 2:
 

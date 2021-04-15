@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepstakesFeb9
+namespace CourtHearing
 {
     public interface ISweepstakesManager
 

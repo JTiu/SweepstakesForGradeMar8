@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepstakesFeb9
+namespace CourtHearing
 {
     
     public class UserInterface
@@ -14,7 +14,8 @@ namespace SweepstakesFeb9
             Console.WriteLine("what is your first name?");
             var FirstName = Console.ReadLine();
             //Console.WriteLine($"The first name of contestant is: {FirstName}");
-            return FirstName;
+           
+                return FirstName;
         }
         public static string GetUserLastName()
         {

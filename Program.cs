@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace SweepstakesFeb9
+namespace CourtHearing
 {
     public class Program //does not need to run anything from here.
     {
@@ -37,12 +37,12 @@ namespace SweepstakesFeb9
             
 
             Menu startMenu = new Menu();
-            Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
+            Dictionary<int, CourtParticipant> contestants = new Dictionary<int, CourtParticipant>();
 
 
             int optionPicked;
 
-            optionPicked = startMenu.DrawMenu();
+             optionPicked = startMenu.DrawMenu(); //
 
             while (optionPicked != 7)
             {

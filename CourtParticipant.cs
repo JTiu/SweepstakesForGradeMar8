@@ -21,17 +21,18 @@ namespace CourtHearing
 
         ////Method CAN DO
         
-        public CourtParticipant CreateCourtParticipant()
+        public CourthouseParticipant CreateCourtParticipant()
         {
-            CourtParticipant courtParticipant = new CourtParticipant();
+            CourthouseParticipant courtParticipant = new CourthouseParticipant();
             courtParticipant.FirstName = UserInterface.GetUserFirstName();
             courtParticipant.LastName = UserInterface.GetUserLastName();
             courtParticipant.EmailAddress = UserInterface.GetUserEmailAddress();
             courtParticipant.RegistrationID = UserInterface.GetUserRegistrationNumber();
-            courtParticipant.CourtDate = UserInterface.GetUserCourtDate();
-            Console.WriteLine("CourtParticipant name: " + courtParticipant.FirstName + " " + courtParticipant.LastName + ", Email:" + courtParticipant.EmailAddress + "; RegID: " + courtParticipant.RegistrationID + "; NextDate: " + courtParticipant.CourtDate);
+            courtParticipant.NextCourtDate = UserInterface.GetUserCourtDate();
+            Console.WriteLine("CourtParticipant name: " + courtParticipant.FirstName + " " + courtParticipant.LastName + ", Email:" + courtParticipant.EmailAddress + "; RegID: " + courtParticipant.RegistrationID + "; NextDate: " + courtParticipant.NextCourtDate);
             Console.ReadLine();
             return courtParticipant;
         }
-    }
+        
+}
 }

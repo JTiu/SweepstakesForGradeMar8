@@ -9,28 +9,18 @@ namespace CourtHearing
     public class Menu
     {
 
-        //Variable HAS A
-
-
-
-
-
-
-
-
-        //Methods
 
         public int DrawMenu()  //going to draw my menu of choices, contestant, sweep, winner
         {
-            Console.WriteLine("JT's Lucky Winner Sweepstakes");
+            Console.WriteLine("Court Hearing Application");
             Console.WriteLine("------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("1. Enter in contestant information");
-            Console.WriteLine("2. List all contestants");
-            Console.WriteLine("3. Create Sweepstakes");
-            Console.WriteLine("4. List all Sweepstakes");
-            Console.WriteLine("5. Pick Winner");
-            Console.WriteLine("6. List Winners");
+            Console.WriteLine("1. Enter in participant information [CreateCourtParticipant]");
+            Console.WriteLine("2. List all Participants[CreateDictionary]");
+            Console.WriteLine("3. Create Court Hearing");
+            Console.WriteLine("4. List all Court Hearings");
+            Console.WriteLine("5. Designate Jurors");
+            Console.WriteLine("6. List Jurors");
             Console.WriteLine("7. Exit Application");
 
             bool invalidEntry = true; //this bool insures that an invalid entry is not entered
@@ -82,11 +72,12 @@ namespace CourtHearing
             switch(option)
             {
                 case 1:
-                    CourtParticipant contestant = new CourtParticipant();
-                    contestant.CreateCourtParticipant();
+                    CourtParticipant contestant1 = new CourtParticipant();
+                    contestant1.CreateCourtParticipant();
                     break;
                 case 2:
-
+                    CourthouseParticipant contestant2 = new CourthouseParticipant();
+                    contestant2.CreateDictionaryParticipants();
                     break;
                 case 3:
 

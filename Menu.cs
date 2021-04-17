@@ -18,7 +18,7 @@ namespace CourtHearing
             Console.WriteLine("1. Enter in Participant information [CreateParticipant]");
             Console.WriteLine("2. List all Participants, then register Participants[Create Dictionary, Register]");
             Console.WriteLine("3. Go to ISweepstakes [Stack data structure]");
-            Console.WriteLine("4. List all Court Hearings");
+            Console.WriteLine("4. Go to Queue Manager");
             Console.WriteLine("5. Designate Jurors");
             Console.WriteLine("6. List Jurors");
             Console.WriteLine("7. Exit Application");
@@ -88,7 +88,8 @@ namespace CourtHearing
                     contestant4.NextMethodOption();
                     break;
                 case 5:
-
+                    Sweepstakes contestant5 = new Sweepstakes();
+                    contestant5.NextMethodOption1();
                     break;
                 case 6:
 

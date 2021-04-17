@@ -8,15 +8,10 @@ using System.Threading.Tasks;
 namespace CourtHearing
 {
     public class Sweepstakes
-        //As a developer, I want to create a Sweepstakes class that uses the Dictionary data structure as an underlying structure.
-       
     {
-     
         public void PrintContestantInfo()
         {
-
             {
-
                 Console.WriteLine("The program class initiates Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement the ISweepstakes interface.");
                 Console.WriteLine();
                 MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
@@ -93,7 +88,45 @@ namespace CourtHearing
 
         public void NextMethodOption()
         {
-            Console.WriteLine("next option??");
+            Console.WriteLine("Hello & Welcome to the Sweepstakes!\nBienvenido a la lotería de juegos deportivos!");
+            System.Collections.Queue q = new System.Collections.Queue();
+
+            q.Enqueue("Sweeper1,");
+            q.Enqueue("Sweeper2,");
+            q.Enqueue("Sweeper3,");
+            q.Enqueue("Sweeper4,");
+            Console.WriteLine();
+            Console.WriteLine("Current sweepers queue: ");
+           
+            foreach (string c in q) Console.Write(c + " ");
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Add two sweepers");
+          
+            q.Enqueue("Sweeper5,");
+            q.Enqueue("Sweeper6,");
+            Console.WriteLine();
+            Console.WriteLine("Current sweepers queue: ");
+            foreach (string c in q) Console.Write(c + " ");
+            Console.ReadLine();
+            Console.WriteLine();
+            Console.WriteLine("Remove two sweepers");
+            string ch = (string)q.Dequeue();
+            Console.WriteLine();
+            Console.WriteLine("The removed sweeper: {0}", ch);
+            ch = (string)q.Dequeue();
+            Console.WriteLine("The removed sweeper: {0}", ch);
+            Console.WriteLine();
+            Console.WriteLine("Current sweepers queue: ");
+
+            foreach (string c in q) Console.Write(c + " ");
+            Console.ReadLine();
+            Console.ReadKey();
+
+        }
+        public void NextMethodOption1()
+        {
+            Console.WriteLine("next next option??");
             Console.ReadLine();
         }
     }

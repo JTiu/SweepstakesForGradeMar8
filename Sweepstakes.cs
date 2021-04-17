@@ -12,25 +12,32 @@ namespace CourtHearing
         public void PrintContestantInfo()
         {
             {
-                Console.WriteLine("The Sweepstakes class initiates Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement the ISweepstakes interface.");
-                Console.WriteLine();
+                //Console.WriteLine("This app has an Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement 'ISweepstakes'.");
+                //Console.WriteLine();
+
                 MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
-                mySweepstakeClass.InsertSweepstakes();
-                mySweepstakeClass.GetSweepstakes();
+                //mySweepstakeClass.Welcome();
+                //mySweepstakeClass.InsertSweepstakes();
+                //mySweepstakeClass.GetSweepstakes();
+                //mySweepstakeClass.Exit();
 
                 YourSweepstakes yourSweeps = new YourSweepstakes();
-                yourSweeps.InsertSweepstakes();
-                yourSweeps.GetSweepstakes();
+                //yourSweeps.InsertSweepstakes();
+                //yourSweeps.GetSweepstakes();
+                //mySweepstakeClass.GetSweepstakes();
+                //mySweepstakeClass.Exit();
 
 
-
-                Console.WriteLine("This is a stack in the Interface Class");
-                Console.WriteLine("List elements in stack");
+                Console.WriteLine("This is the stack demo, Pop & Push");
+                Console.WriteLine();
+                Console.WriteLine("List elements in stack:");
+                Console.WriteLine();
                 System.Collections.Stack st2 = new System.Collections.Stack();
                 st2.Push("now");
                 st2.Push("programmer");
                 st2.Push("am a");
                 st2.Push("I");
+            
 
                 foreach (Object obj in st2)
                 {
@@ -70,6 +77,7 @@ namespace CourtHearing
                     Console.WriteLine(obj);
                 }
                 Console.ReadKey();
+                Console.Clear();
 
                 Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
                 Console.WriteLine();
@@ -88,7 +96,7 @@ namespace CourtHearing
 
         public void NextMethodOption()
         {
-            Console.WriteLine("Hello & Welcome to the Sweepstakes!\nBienvenido a la lotería de juegos deportivos!");
+            Console.WriteLine("The Sweepstakes Queue Demo!\nBienvenido a la lotería de juegos deportivos! Veamos 'Q'!");
             System.Collections.Queue q = new System.Collections.Queue();
 
             q.Enqueue("Sweeper1,");
@@ -96,33 +104,32 @@ namespace CourtHearing
             q.Enqueue("Sweeper3,");
             q.Enqueue("Sweeper4,");
             Console.WriteLine();
-            Console.WriteLine("Current sweepers queue: ");
-           
+            Console.WriteLine("This is the current Sweepers Queue: ");
+
             foreach (string c in q) Console.Write(c + " ");
             Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Add two sweepers");
-          
+            Console.WriteLine("Add two Sweepers to the Queue");
+
             q.Enqueue("Sweeper5,");
             q.Enqueue("Sweeper6,");
             Console.WriteLine();
-            Console.WriteLine("Current sweepers queue: ");
+            Console.WriteLine("Current Sweepers queue: ");
             foreach (string c in q) Console.Write(c + " ");
             Console.ReadLine();
             Console.WriteLine();
-            Console.WriteLine("Remove two sweepers");
+            Console.WriteLine("Remove two Sweepers");
             string ch = (string)q.Dequeue();
             Console.WriteLine();
-            Console.WriteLine("The removed sweeper: {0}", ch);
+            Console.WriteLine("The removed Sweeper: {0}", ch);
             ch = (string)q.Dequeue();
-            Console.WriteLine("The removed sweeper: {0}", ch);
+            Console.WriteLine("The removed Sweeper: {0}", ch);
             Console.WriteLine();
-            Console.WriteLine("Current sweepers queue: ");
+            Console.WriteLine("Back to the original Sweepers Queue! ");
 
             foreach (string c in q) Console.Write(c + " ");
             Console.ReadLine();
             Console.ReadKey();
-
         }
         public void NextMethodOption1()
         {

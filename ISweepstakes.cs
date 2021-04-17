@@ -11,6 +11,11 @@ namespace CourtHearing
     {
         void InsertSweepstakes(); // interface method (does not have a body)
         void GetSweepstakes();
+        void GetStack();
+        void GetQueue();
+
+        void Welcome();
+        void Exit();
     }
 
     

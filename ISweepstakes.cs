@@ -6,16 +6,17 @@ using System.Threading.Tasks;
 
 namespace CourtHearing
 {
-    public interface ISweepstakesManager
+    public interface ISweepstakes
 
     {
-        void InsertSweepstakes(Sweepstakes sweepstakes);
+        void InsertSweepstakes(); // interface method (does not have a body)
+        void GetSweepstakes();
     }
 
-   // public Sweepstakes GetSweepstakes(Sweepstakes sweepstakes); 
-   // {
+    // public Sweepstakes GetSweepstakes(Sweepstakes sweepstakes); 
+    // {
     //    return Object Sweepstakes() { object Name = name; }
-    }
+}
     
 
 

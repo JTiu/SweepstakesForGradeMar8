@@ -45,15 +45,16 @@
   <ItemGroup>
     <Compile Include="CourtParticipant.cs" />
     <Compile Include="Dictionary.cs" />
-    <Compile Include="ISweepstakesManager.cs" />
+    <Compile Include="ISweepstakes.cs" />
     <Compile Include="Menu.cs" />
+    <Compile Include="YourSweeps - Copy.cs" />
+    <Compile Include="MySweeps.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Sweepstakes.cs" />
     <Compile Include="SweeptakesManager\ISweepstakesManager.cs" />
     <Compile Include="SweeptakesManager\SweepstakesManager.cs" />
     <Compile Include="UserInterface.cs" />
-    <Compile Include="YourSweepstakes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

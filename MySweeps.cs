@@ -13,43 +13,46 @@ namespace SweepstakesFeb9
         {
             // Program gives name here
             Console.WriteLine("'MY SWEEPS' has a method to 'InsertSweepstakes'");
-            Console.WriteLine("This is the MYSWEEPS insertion");
+            Console.WriteLine("This is the MY SWEEPS insertion");
             Console.ReadLine();
         }
         public void GetSweepstakes()
         {
             // Program registers Participant here
             Console.WriteLine("MY SWEEPS also has the 'Get Sweepstakes' method");
-            Console.WriteLine("MYSWEEPS: Get your sweepstakes here");
+            Console.WriteLine("MY SWEEPS: Get your sweepstakes here");
             Console.ReadLine();
         }
 
         public void Welcome()
         {
-            Console.WriteLine("Hello!\nBienvenido a la lotería de juegos deportivos Interface.  Let's stack some data!");
-
+            Console.WriteLine("Hello! Bienvenido a la lotería de juegos deportivos MY SWEEPS!.");
+            
+            Console.ReadLine();
         }
         public void Exit()
         {
-            Console.WriteLine("Goodbye & safe travels!/Buenos viajes!");
-
+            Console.WriteLine("Goodbye & safe travels!\nAdiós y viajes seguros de MY SWEEPS!");
+            Console.WriteLine();
+            Console.ReadLine();
         }
         public void GetStack()
         {
             {
-                Console.WriteLine("The Sweepstakes class initiates Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement the ISweepstakes interface.");
-                Console.WriteLine();
+                //Console.WriteLine("The Sweepstakes class initiates Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement the ISweepstakes interface.");
+                //Console.WriteLine();
 
                 MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
                 mySweepstakeClass.Welcome();
                 mySweepstakeClass.InsertSweepstakes();
                 mySweepstakeClass.GetSweepstakes();
-
+                mySweepstakeClass.Exit();
 
                 YourSweepstakes yourSweeps = new YourSweepstakes();
+                yourSweeps.Welcome();
                 yourSweeps.InsertSweepstakes();
                 yourSweeps.GetSweepstakes();
-
+                yourSweeps.Exit();
 
 
                 Console.WriteLine("This is a stack in the Interface Class");

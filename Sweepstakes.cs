@@ -131,7 +131,28 @@ namespace CourtHearing
             Console.ReadLine();
             Console.ReadKey();
         }
-        public void NextMethodOption1()
+        public void FullImplementation()
+        {
+            Console.WriteLine("Implement 'Get' & 'Insert', and 'Welcome' & 'Exit'");
+            Console.ReadLine();
+            Console.WriteLine("This app has an Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement 'ISweepstakes'.");
+            Console.WriteLine();
+
+            MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
+            mySweepstakeClass.Welcome();
+            mySweepstakeClass.InsertSweepstakes();
+            mySweepstakeClass.GetSweepstakes();
+            mySweepstakeClass.Exit();
+            
+
+            YourSweepstakes yourSweeps = new YourSweepstakes();
+            yourSweeps.Welcome();
+            yourSweeps.InsertSweepstakes();
+            yourSweeps.GetSweepstakes();
+            mySweepstakeClass.Exit();
+
+        }
+        public void NextMethodOption2()
         {
             Console.WriteLine("next next option??");
             Console.ReadLine();

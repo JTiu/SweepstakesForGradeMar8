@@ -13,9 +13,7 @@ namespace CourtHearing
         void GetSweepstakes();
     }
 
-    // public Sweepstakes GetSweepstakes(Sweepstakes sweepstakes); 
-    // {
-    //    return Object Sweepstakes() { object Name = name; }
+    
 }
     
 

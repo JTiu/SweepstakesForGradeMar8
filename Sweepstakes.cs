@@ -12,7 +12,7 @@ namespace CourtHearing
         public void PrintContestantInfo()
         {
             {
-                Console.WriteLine("The program class initiates Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement the ISweepstakes interface.");
+                Console.WriteLine("The Sweepstakes class initiates Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement the ISweepstakes interface.");
                 Console.WriteLine();
                 MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
                 mySweepstakeClass.InsertSweepstakes();

@@ -12,7 +12,7 @@ namespace CourtHearing
 
         public int DrawMenu()  //going to draw my menu of choices, contestant, sweep, winner
         {
-            Console.WriteLine("Sweepstakes: Welcome!");
+            Console.WriteLine("Hello & Welcome to the Sweepstakes!\nBienvenido a la lotería de juegos deportivos!");
             Console.WriteLine("------------------------------------");
             Console.WriteLine();
             Console.WriteLine("1. Enter in Participant information [CreateParticipant]");

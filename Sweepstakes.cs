@@ -11,21 +11,11 @@ namespace CourtHearing
        
     {
         public string name { get; set; }
-        public Sweepstakes(string Name)
+        
+        public void PrintContestantInfo()
         {
-            this.name = Name;
-        }
-        public void RegisterContestant(CourtParticipant contestant) 
-        {
-
-        }
-        //public CourtParticipant PickWinner()
-        //{
-        //    return new CourtParticipant();
-        //}    
-        public void PrintContestantInfo(CourtParticipant contestant)
-        {
-                
+            Console.WriteLine("Is this useless too??");
+            Console.ReadLine();
         }
     }
 

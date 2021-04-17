@@ -12,12 +12,12 @@ namespace CourtHearing
 
         public int DrawMenu()  //going to draw my menu of choices, contestant, sweep, winner
         {
-            Console.WriteLine("Court Hearing Application");
+            Console.WriteLine("Sweepstakes: Welcome!");
             Console.WriteLine("------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("1. Enter in participant information [CreateCourtParticipant]");
-            Console.WriteLine("2. List all Participants[CreateDictionary]");
-            Console.WriteLine("3. Create Court Hearing");
+            Console.WriteLine("1. Enter in Participant information [CreateParticipant]");
+            Console.WriteLine("2. List all Participants, then register Participants[Create Dictionary, Register]");
+            Console.WriteLine("3. Go to ISweepstakesManager [Stack data strructure]");
             Console.WriteLine("4. List all Court Hearings");
             Console.WriteLine("5. Designate Jurors");
             Console.WriteLine("6. List Jurors");
@@ -80,7 +80,8 @@ namespace CourtHearing
                     contestant2.CreateDictionaryParticipants();
                     break;
                 case 3:
-
+                    Sweepstakes contestant3 = new Sweepstakes();
+                    contestant3.PrintContestantInfo();
                     break;
                 case 4:
 

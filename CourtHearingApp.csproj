@@ -53,6 +53,7 @@
     <Compile Include="SweeptakesManager\ISweepstakesManager.cs" />
     <Compile Include="SweeptakesManager\SweepstakesManager.cs" />
     <Compile Include="UserInterface.cs" />
+    <Compile Include="YourSweepstakes.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

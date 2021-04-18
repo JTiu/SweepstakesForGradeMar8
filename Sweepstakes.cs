@@ -9,25 +9,11 @@ namespace NameSpaceSweepstakes
 {
     public class Sweepstakes
     {
-        public void PrintContestantInfo()
+        public void StackContestantInfo()
         {
             {
-                //Console.WriteLine("This app has an Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement 'ISweepstakes'.");
-                //Console.WriteLine();
-
                 MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
-                //mySweepstakeClass.Welcome();
-                //mySweepstakeClass.InsertSweepstakes();
-                //mySweepstakeClass.GetSweepstakes();
-                //mySweepstakeClass.Exit();
-
                 YourSweepstakes yourSweeps = new YourSweepstakes();
-                //yourSweeps.InsertSweepstakes();
-                //yourSweeps.GetSweepstakes();
-                //mySweepstakeClass.GetSweepstakes();
-                //mySweepstakeClass.Exit();
-
-
                 Console.WriteLine("This is the stack demo, Pop & Push");
                 Console.WriteLine();
                 Console.WriteLine("List elements in stack:");
@@ -94,7 +80,7 @@ namespace NameSpaceSweepstakes
             }
         }
 
-        public void NextMethodOption()
+        public void QueueContestantInfo()
         {
             Console.WriteLine("The Sweepstakes Queue Demo!\nBienvenido a la lotería de juegos deportivos! Veamos 'Q'!");
             System.Collections.Queue q = new System.Collections.Queue();
@@ -133,7 +119,7 @@ namespace NameSpaceSweepstakes
         }
         public void FullImplementation()
         {
-            Console.WriteLine("Implement 'Get' & 'Insert', and 'Welcome' & 'Exit'");
+            Console.WriteLine("Implement 'Welcome', 'Get', 'Insert' & 'Exit' with a data stack");
             Console.ReadLine();
             Console.WriteLine("This app has an Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement 'ISweepstakes'.");
             Console.WriteLine();
@@ -141,20 +127,74 @@ namespace NameSpaceSweepstakes
             MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
             mySweepstakeClass.Welcome();
             mySweepstakeClass.InsertSweepstakes();
+           // MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
+            YourSweepstakes yourSweeps = new YourSweepstakes();
+            Console.WriteLine("This is the stack, Pop & Push");
+            Console.WriteLine("List elements in stack:");
+            Console.WriteLine();
+            System.Collections.Stack st2 = new System.Collections.Stack();
+            st2.Push("program");
+            st2.Push("I");
+
+
+            foreach (Object obj in st2)
+            {
+                Console.WriteLine(obj);
+            }
+            Console.ReadKey();
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine();
+            Console.WriteLine("Pop element from the stack");
+            st2.Pop();
+            Console.WriteLine();
+            foreach (Object obj in st2)
+            {
+                Console.WriteLine(obj);
+            }
+            Console.ReadKey();
+
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine("Pop another element from the stack");
+            st2.Pop();
+            Console.WriteLine();
+            foreach (Object obj in st2)
+            {
+                Console.WriteLine(obj);
+            }
+            Console.ReadKey();
+            Console.Clear();
+            Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++");
+            Console.WriteLine();
+            Console.WriteLine("Push new elements one by one");
+            Console.WriteLine();
+            st2.Push("programmer");
+            st2.Push("am a");
+            st2.Push("I");
+            foreach (Object obj in st2)
+            {
+                Console.WriteLine(obj);
+                Console.ReadLine();
+            }
             mySweepstakeClass.GetSweepstakes();
             mySweepstakeClass.Exit();
             
-
-            YourSweepstakes yourSweeps = new YourSweepstakes();
-            yourSweeps.Welcome();
-            yourSweeps.InsertSweepstakes();
-            yourSweeps.GetSweepstakes();
-            yourSweeps.Exit();
-
         }
-        public void NextMethodOption2()
+        public void ImplementacionCompleta()
         {
-            Console.WriteLine("next next option??");
+            Console.WriteLine("Implement 'Welcome', 'Get', 'Insert' & 'Exit' with a Queue");
+            Console.ReadLine();
+            YourSweepstakes thisSweeps = new YourSweepstakes();
+            thisSweeps.Welcome();
+            thisSweeps.InsertSweepstakes();
+            Console.Clear();
+            QueueContestantInfo();
+            Console.Clear();
+            thisSweeps.GetSweepstakes();
+            thisSweeps.Exit();
+        }
+        public void NextMethodOption3()
+        {
+            Console.WriteLine("next next next option??");
             Console.ReadLine();
         }
     }
@@ -165,17 +205,9 @@ namespace NameSpaceSweepstakes
 
 }
 
-
-
-
-
-        
-
         
         
 
-        //Dictionary<int SweepsParticipant>  = new Dictionary<int>();
-        //animals.Add("cat", "feline");
-        //animals.Add("dog", "canine");
+       
     
 

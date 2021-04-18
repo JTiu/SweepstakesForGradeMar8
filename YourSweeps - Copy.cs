@@ -25,7 +25,7 @@ namespace SweepstakesFeb9
         }
         public void Welcome()
         {
-            Console.WriteLine("Bienvenido a la lotería de juegos deportivos YOUR SWEEPS!");
+            Console.WriteLine("Hola/Hello y Bienvenido a la lotería de juegos deportivos 'YOUR SWEEPS'!");
             Console.ReadLine();
         }
         public void Exit()

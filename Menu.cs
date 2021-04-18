@@ -17,10 +17,10 @@ namespace NameSpaceSweepstakes
             Console.WriteLine();
             Console.WriteLine("1. Enter in Participant information [CreateParticipant, Print Info]");
             Console.WriteLine("2. List all Participants, then register Participants [Create Dictionary, Register]");
-            Console.WriteLine("3. Quick Demo of Stack");
-            Console.WriteLine("4. Quick Demo of Queue");
-            Console.WriteLine("5. Implement Welcome, Insert, Get, Exit");
-            Console.WriteLine("6. List Jurors");
+            Console.WriteLine("3. Choose/Examine the Stack");
+            Console.WriteLine("4. Choose/Examine the Queue");
+            Console.WriteLine("5. Implement Welcome, Insert, Get, Exit [Stack]");
+            Console.WriteLine("6. Implement Welcome, Insert, Get, Exit [Queue]");
             Console.WriteLine("7. Exit Application");
 
             bool invalidEntry = true; //this bool insures that an invalid entry is not entered
@@ -47,11 +47,11 @@ namespace NameSpaceSweepstakes
 
             //This method will chck two things: 1) if th string can b pars to an int 2) if they entered an int - was the int 1-6 (EX: 15 is not a menu option)
             int number;
-            bool isNumeric = int.TryParse(result, out number); //This is a method that checks if a string can be parsed into a int. EX: "2" - this would return TRUE, EX: "greg" this would return FALSE
+            bool isNumeric = int.TryParse(result, out number); //This is a method that checks if a string can be parsed into a int. EX: "2" - this would return TRUE, EX: "joe" this would return FALSE
 
             if(isNumeric == true)
             {
-                if(number < 8 && number > 0)
+                if(number < 9 && number > 0)
                 {
                     return true;
                 }
@@ -81,11 +81,11 @@ namespace NameSpaceSweepstakes
                     break;
                 case 3:
                     Sweepstakes contestant3 = new Sweepstakes();
-                    contestant3.PrintContestantInfo();
+                    contestant3.StackContestantInfo();
                     break;
                 case 4:
                     Sweepstakes contestant4 = new Sweepstakes();
-                    contestant4.NextMethodOption();
+                    contestant4.QueueContestantInfo();
                     break;
                 case 5:
                     Sweepstakes contestant5 = new Sweepstakes();
@@ -93,7 +93,11 @@ namespace NameSpaceSweepstakes
                     break;
                 case 6:
                     Sweepstakes contestant6 = new Sweepstakes();
-                    contestant6.NextMethodOption2();
+                    contestant6.ImplementacionCompleta();
+                    break;
+                case 7:
+                    Sweepstakes contestant7 = new Sweepstakes();
+                    contestant7.NextMethodOption3();
                     break;
                 default:
                     break;

@@ -28,7 +28,7 @@ namespace NameSpaceSweepstakes
             newParticipant.LastName = UserInterface.GetUserLastName();
             newParticipant.EmailAddress = UserInterface.GetUserEmailAddress();
             newParticipant.RegistrationID = UserInterface.GetUserRegistrationNumber();
-            newParticipant.NextCourtDate = UserInterface.GetUserCourtDate();
+            newParticipant.NextCourtDate = UserInterface.GetUserChoice();
             Console.WriteLine("Sweepstakes Participant Info: First Name:   " + newParticipant.FirstName + "     Last Name:  " + newParticipant.LastName + ", Email:" + newParticipant.EmailAddress + ";  Sweeps Choice: " + newParticipant.NextCourtDate);
             Console.ReadLine();
             return newParticipant;

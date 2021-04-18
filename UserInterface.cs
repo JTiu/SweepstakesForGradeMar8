@@ -33,7 +33,7 @@ namespace NameSpaceSweepstakes
             var RegistrationID = Console.ReadLine();
             return RegistrationID;
         }
-        public static string GetUserCourtDate()
+        public static string GetUserChoice()
         {
             Console.WriteLine("Would you like to enter 'MySweeps' or 'YourSweeps'?");
             var ChooseSweeps = Console.ReadLine();

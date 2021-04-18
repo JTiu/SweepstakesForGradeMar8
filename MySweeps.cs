@@ -26,13 +26,13 @@ namespace SweepstakesFeb9
 
         public void Welcome()
         {
-            Console.WriteLine("Hello! Bienvenido a la lotería de juegos deportivos MY SWEEPS!.");
+            Console.WriteLine("Hello! Welcome to MY SWEEPS!.");
             
             Console.ReadLine();
         }
         public void Exit()
         {
-            Console.WriteLine("Goodbye & safe travels!\nAdiós y viajes seguros de MY SWEEPS!");
+            Console.WriteLine("Goodbye & safe travels!");
             Console.WriteLine();
             Console.ReadLine();
         }
@@ -119,7 +119,7 @@ namespace SweepstakesFeb9
 
         public void GetQueue()
         {
-            Console.WriteLine("Hello & Welcome to the Sweepstakes!\nBienvenido a la lotería de juegos deportivos! Let's see the Queue!");
+            Console.WriteLine("Hello & Welcome to the Sweepstakes!\nLet's see the Queue!");
             System.Collections.Queue q = new System.Collections.Queue();
 
             q.Enqueue("Sweeper1,");

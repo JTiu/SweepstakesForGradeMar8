@@ -12,15 +12,15 @@ namespace SweepstakesFeb9
         public void InsertSweepstakes()
         {
             // Program gives name here
-            Console.WriteLine("YOUR SWEEPS also has a method called 'InsertSweepstakes'");
-            Console.WriteLine("We are YOUR SWEEPS Insertion implementation!");
+            Console.WriteLine("YOUR SWEEPS también tiene un método llamado'InsertSweepstakes'");
+            Console.WriteLine("Somos 'YOUR SWEEPS' Implementación de inserción!");
             Console.ReadLine();
         }
         public void GetSweepstakes()
         {
             // Program registers Participant here
-            Console.WriteLine("YOUR SWEEPS may also 'Get Sweepstakes', but in a different way!");
-            Console.WriteLine("We have YOUR SWEEPS right here!");
+            Console.WriteLine("También puede 'YOUR SWEEPS', pero de una manera diferente!");
+            Console.WriteLine("Tenemos YOUR SWEEPS aquí mismo!");
             Console.ReadLine();
         }
         public void Welcome()
@@ -30,7 +30,7 @@ namespace SweepstakesFeb9
         }
         public void Exit()
         {
-            Console.WriteLine("Buenos viajes buenos viajes te vas de la lotería YOUR SWEEPS!/ The Sweepstakes thanks you and wishes you good luck!");
+            Console.WriteLine("Buenos viajes te vas de la lotería YOUR SWEEPS!/ The Sweepstakes thanks you and wishes you good luck!");
             Console.ReadLine();
         }
         public void GetStack()

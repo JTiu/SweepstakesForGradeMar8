@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourtHearing
+namespace NameSpaceSweepstakes
 {
     public class RegisteredSweepsParticipant
     {
@@ -59,11 +59,11 @@ namespace CourtHearing
             RegisteredSweepsParticipant courthouseParticipant234 = dictionaryCtHouseParticipants["234"];
             Console.WriteLine("View all Participants press 'Enter' [List Dictionary]");
             Console.ReadLine();
-            Console.WriteLine("ID = {0}/ FirstName = {1}/ LastName = {2}/ NextCourtDate = {3}", courthouseParticipant345.RegistrationID, courthouseParticipant345.FirstName, courthouseParticipant345.LastName, courthouseParticipant345.NextCourtDate);
+            Console.WriteLine("ID = {0}/ FirstName = {1}/ LastName = {2}/ SweepsChoice = {3}", courthouseParticipant345.RegistrationID, courthouseParticipant345.FirstName, courthouseParticipant345.LastName, courthouseParticipant345.NextCourtDate);
           
-            Console.WriteLine("ID = {0}/ FirstName = {1}/ LastName = {2}/ NextCourtDate = {3}", courthouseParticipant123.RegistrationID, courthouseParticipant123.FirstName, courthouseParticipant123.LastName, courthouseParticipant123.NextCourtDate);
+            Console.WriteLine("ID = {0}/ FirstName = {1}/ LastName = {2}/ SweepsChoice = {3}", courthouseParticipant123.RegistrationID, courthouseParticipant123.FirstName, courthouseParticipant123.LastName, courthouseParticipant123.NextCourtDate);
        
-            Console.WriteLine("ID = {0}/ FirstName = {1}/ LastName = {2}/ NextCourtDate = {3}", courthouseParticipant234.RegistrationID, courthouseParticipant234.FirstName, courthouseParticipant234.LastName, courthouseParticipant234.NextCourtDate);
+            Console.WriteLine("ID = {0}/ FirstName = {1}/ LastName = {2}/ SweepsChoice = {3}", courthouseParticipant234.RegistrationID, courthouseParticipant234.FirstName, courthouseParticipant234.LastName, courthouseParticipant234.NextCourtDate);
             Console.ReadLine();
             Console.WriteLine("Register Participants, one--by-one, press 'Enter'");
             Console.ReadLine();
@@ -71,7 +71,7 @@ namespace CourtHearing
             {
                 Console.WriteLine("@hereID = {0}", participantKeyValuePair.Key);
                 RegisteredSweepsParticipant ctHousePart = participantKeyValuePair.Value;
-                Console.WriteLine("ID = {0}, FirstName = {1}, LastName = {2}, NextCourtDate = {3}", ctHousePart.RegistrationID, ctHousePart.FirstName, ctHousePart.LastName, ctHousePart.NextCourtDate);
+                Console.WriteLine("ID = {0}, FirstName = {1}, LastName = {2}, SweepsChoice = {3}", ctHousePart.RegistrationID, ctHousePart.FirstName, ctHousePart.LastName, ctHousePart.NextCourtDate);
                 Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 Console.ReadLine();
             }

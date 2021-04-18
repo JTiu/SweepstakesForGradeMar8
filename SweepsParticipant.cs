@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourtHearing
+namespace NameSpaceSweepstakes
 {
     public class SweepsParticipant
     {//Variable HAS :  As a developer, I want to create a SweepsParticipant class that has a first name, last name, email address, and registration number
@@ -16,7 +16,7 @@ namespace CourtHearing
         public string EmailAddress { get; set; }
         public string RegistrationID { get; set; }
 
-        public string NextCourtDate { get; set; }
+        public string SweepsChoice { get; set; }
 
 
         ////Method CAN DO

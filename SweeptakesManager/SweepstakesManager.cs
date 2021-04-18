@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourtHearing.SweeptakesManager
+namespace NameSpaceSweepstakes.SweeptakesManager
 {
 //    public class SweepstakesManager : ISweepstakes //Interface creates a contract tha tthe class has to follow
 //    {

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace CourtHearing
+namespace NameSpaceSweepstakes
 {
     public class Program //does not need to run anything from here.
     {

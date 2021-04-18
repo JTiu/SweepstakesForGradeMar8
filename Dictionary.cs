@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace CourtHearing
 {
-    public class CourthouseParticipant
+    public class RegisteredSweepsParticipant
     {
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -14,10 +14,10 @@ namespace CourtHearing
         public string RegistrationID { get; set; }
         public string NextCourtDate { get; set; }
 
-        public CourthouseParticipant CreateDictionaryParticipants()
+        public RegisteredSweepsParticipant CreateDictionaryParticipants()
         {
 
-            CourthouseParticipant ctHouseParticipant1 = new CourthouseParticipant()
+            RegisteredSweepsParticipant ctHouseParticipant1 = new RegisteredSweepsParticipant()
             {
                 FirstName = "Jessica",
                 LastName = "Jones",
@@ -27,7 +27,7 @@ namespace CourtHearing
 
             };
 
-            CourthouseParticipant ctHouseParticipant2 = new CourthouseParticipant()
+            RegisteredSweepsParticipant ctHouseParticipant2 = new RegisteredSweepsParticipant()
             {
                 FirstName = "Joe",
                 LastName = "Smith",
@@ -37,7 +37,7 @@ namespace CourtHearing
 
             };
 
-            CourthouseParticipant ctHouseParticipant3 = new CourthouseParticipant()
+            RegisteredSweepsParticipant ctHouseParticipant3 = new RegisteredSweepsParticipant()
             {
                 FirstName = "Jeff",
                 LastName = "Jones",
@@ -47,16 +47,16 @@ namespace CourtHearing
 
             };
 
-            Dictionary<string, CourthouseParticipant> dictionaryCtHouseParticipants = new Dictionary<string, CourthouseParticipant>();
+            Dictionary<string, RegisteredSweepsParticipant> dictionaryCtHouseParticipants = new Dictionary<string, RegisteredSweepsParticipant>();
             dictionaryCtHouseParticipants.Add(ctHouseParticipant1.RegistrationID, ctHouseParticipant1);
             dictionaryCtHouseParticipants.Add(ctHouseParticipant2.RegistrationID, ctHouseParticipant2);
             dictionaryCtHouseParticipants.Add(ctHouseParticipant3.RegistrationID, ctHouseParticipant3);
 
-            CourthouseParticipant courthouseParticipant345 = dictionaryCtHouseParticipants["345"];
+            RegisteredSweepsParticipant courthouseParticipant345 = dictionaryCtHouseParticipants["345"];
 
-            CourthouseParticipant courthouseParticipant123 = dictionaryCtHouseParticipants["123"];
+            RegisteredSweepsParticipant courthouseParticipant123 = dictionaryCtHouseParticipants["123"];
 
-            CourthouseParticipant courthouseParticipant234 = dictionaryCtHouseParticipants["234"];
+            RegisteredSweepsParticipant courthouseParticipant234 = dictionaryCtHouseParticipants["234"];
             Console.WriteLine("View all Participants press 'Enter' [List Dictionary]");
             Console.ReadLine();
             Console.WriteLine("ID = {0}/ FirstName = {1}/ LastName = {2}/ NextCourtDate = {3}", courthouseParticipant345.RegistrationID, courthouseParticipant345.FirstName, courthouseParticipant345.LastName, courthouseParticipant345.NextCourtDate);
@@ -67,10 +67,10 @@ namespace CourtHearing
             Console.ReadLine();
             Console.WriteLine("Register Participants, one--by-one, press 'Enter'");
             Console.ReadLine();
-            foreach (KeyValuePair<string, CourthouseParticipant> participantKeyValuePair in dictionaryCtHouseParticipants)
+            foreach (KeyValuePair<string, RegisteredSweepsParticipant> participantKeyValuePair in dictionaryCtHouseParticipants)
             {
                 Console.WriteLine("@hereID = {0}", participantKeyValuePair.Key);
-                CourthouseParticipant ctHousePart = participantKeyValuePair.Value;
+                RegisteredSweepsParticipant ctHousePart = participantKeyValuePair.Value;
                 Console.WriteLine("ID = {0}, FirstName = {1}, LastName = {2}, NextCourtDate = {3}", ctHousePart.RegistrationID, ctHousePart.FirstName, ctHousePart.LastName, ctHousePart.NextCourtDate);
                 Console.WriteLine("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
                 Console.ReadLine();

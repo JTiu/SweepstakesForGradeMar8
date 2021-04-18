@@ -11,7 +11,7 @@ namespace CourtHearing
         static void Main(string[] args)
         {
             Menu startMenu = new Menu();
-           // Dictionary<int, CourtParticipant> contestants = new Dictionary<int, CourtParticipant>();
+           // Dictionary<int, SweepsParticipant> contestants = new Dictionary<int, SweepsParticipant>();
 
 
             int optionPicked;

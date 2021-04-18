@@ -29,7 +29,7 @@ namespace CourtHearing
         }
         public static string GetUserRegistrationNumber()
         {
-            Console.WriteLine("If you know your registration number, please enter here: ");
+            Console.WriteLine("You will be assigned a registration mumber--press enter: ");
             var RegistrationID = Console.ReadLine();
             return RegistrationID;
         }

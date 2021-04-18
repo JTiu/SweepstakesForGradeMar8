@@ -174,7 +174,7 @@ namespace CourtHearing
         
         
 
-        //Dictionary<int CourtParticipant>  = new Dictionary<int>();
+        //Dictionary<int SweepsParticipant>  = new Dictionary<int>();
         //animals.Add("cat", "feline");
         //animals.Add("dog", "canine");
     

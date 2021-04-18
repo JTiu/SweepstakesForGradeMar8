@@ -15,7 +15,7 @@ namespace CourtHearing
             Console.WriteLine("Hello & Welcome to the Sweepstakes!\nBienvenido a la lotería de juegos deportivos!");
             Console.WriteLine("------------------------------------");
             Console.WriteLine();
-            Console.WriteLine("1. Enter in Participant information [CreateParticipant]");
+            Console.WriteLine("1. Enter in Participant information [CreateParticipant, Print Info]");
             Console.WriteLine("2. List all Participants, then register Participants [Create Dictionary, Register]");
             Console.WriteLine("3. Quick Demo of Stack");
             Console.WriteLine("4. Quick Demo of Queue");
@@ -72,11 +72,11 @@ namespace CourtHearing
             switch(option)
             {
                 case 1:
-                    CourtParticipant contestant1 = new CourtParticipant();
-                    contestant1.CreateCourtParticipant();
+                    SweepsParticipant contestant1 = new SweepsParticipant();
+                    contestant1.CreateParticipant();
                     break;
                 case 2:
-                    CourthouseParticipant contestant2 = new CourthouseParticipant();
+                    RegisteredSweepsParticipant contestant2 = new RegisteredSweepsParticipant();
                     contestant2.CreateDictionaryParticipants();
                     break;
                 case 3:

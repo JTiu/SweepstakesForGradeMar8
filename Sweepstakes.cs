@@ -149,7 +149,7 @@ namespace CourtHearing
             yourSweeps.Welcome();
             yourSweeps.InsertSweepstakes();
             yourSweeps.GetSweepstakes();
-            mySweepstakeClass.Exit();
+            yourSweeps.Exit();
 
         }
         public void NextMethodOption2()

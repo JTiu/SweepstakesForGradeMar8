@@ -35,9 +35,9 @@ namespace CourtHearing
         }
         public static string GetUserCourtDate()
         {
-            Console.WriteLine("When is your court date?");
-            var CourtDate = Console.ReadLine();
-            return CourtDate;
+            Console.WriteLine("Would you like to enter 'MySweeps' or 'YourSweeps'?");
+            var ChooseSweeps = Console.ReadLine();
+            return ChooseSweeps;
         }
 
 

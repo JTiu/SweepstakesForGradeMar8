@@ -10,7 +10,7 @@ namespace CourtHearing
     {//Variable HAS :  As a developer, I want to create a CourtParticipant class that has a first name, last name, email address, and registration number
 
         public string FirstName { get; set; }
-        public string CourtDate { get; set; }
+        public string ChooseSweeps { get; set; }
 
         public string LastName { get; set; }
         public string EmailAddress { get; set; }
@@ -29,7 +29,7 @@ namespace CourtHearing
             courtParticipant.EmailAddress = UserInterface.GetUserEmailAddress();
             courtParticipant.RegistrationID = UserInterface.GetUserRegistrationNumber();
             courtParticipant.NextCourtDate = UserInterface.GetUserCourtDate();
-            Console.WriteLine("CourtParticipant name: " + courtParticipant.FirstName + " " + courtParticipant.LastName + ", Email:" + courtParticipant.EmailAddress + "; RegID: " + courtParticipant.RegistrationID + "; NextDate: " + courtParticipant.NextCourtDate);
+            Console.WriteLine("Sweepstakes Participant Info: " + courtParticipant.FirstName + " " + courtParticipant.LastName + ", Email:" + courtParticipant.EmailAddress + "; RegID: " + courtParticipant.RegistrationID + "; Sweeps Choice: " + courtParticipant.NextCourtDate);
             Console.ReadLine();
             return courtParticipant;
         }

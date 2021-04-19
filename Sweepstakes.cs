@@ -121,7 +121,7 @@ namespace NameSpaceSweepstakes
         {
             
             Console.WriteLine("This app has an Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement 'ISweepstakes'.");
-            Console.WriteLine(); Console.WriteLine("First ISweepstakes Implementation, with a stack data stack structure: 'Welcome', 'Get', 'Insert', 'Pick Winner', & 'Exit'");
+            Console.WriteLine(); Console.WriteLine("First ISweepstakes Implementation, with the flexibility of a 'Dependency injection':\nSelect five methods with a stack data structure: 'Welcome', 'Get', 'Insert', 'Pick Winner', & 'Exit'");
             Console.ReadLine();
 
             MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
@@ -182,7 +182,7 @@ namespace NameSpaceSweepstakes
         }
         public void ImplementacionCompleta()
         {
-            Console.WriteLine("Second Implementation ISweepstakes, with a Queue: 'Welcome', 'Pick Winner' & 'Exit' ONLY");
+            Console.WriteLine("Second Implementation ISweepstakes, with the flexibility of a 'Dependency injection':\nSelect three methods, use Queue data: 'Welcome', 'Pick Winner' & 'Exit' ONLY");
             Console.ReadLine();
             YourSweepstakes thisSweeps = new YourSweepstakes();
             thisSweeps.Welcome();

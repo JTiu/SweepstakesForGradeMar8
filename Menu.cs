@@ -21,8 +21,8 @@ namespace NameSpaceSweepstakes
             Console.WriteLine("4. Choose/Examine the Queue");
             Console.WriteLine("5. Implement Welcome, Insert, Get, Exit [Stack]");
             Console.WriteLine("6. Implement Welcome, Insert, Get, Exit [Queue]");
-            Console.WriteLine("7. Exit Application");
-
+            Console.WriteLine("7. Marketing Firm");
+            Console.WriteLine("8. Exit Application");
             bool invalidEntry = true; //this bool insures that an invalid entry is not entered
             string result = "";
 
@@ -36,7 +36,7 @@ namespace NameSpaceSweepstakes
                 }
                 else
                 {
-                    Console.WriteLine("Entry was incorrect, please enter 1-7");
+                    Console.WriteLine("Entry was incorrect, please enter 1-8");
                 }
             }
 
@@ -97,7 +97,11 @@ namespace NameSpaceSweepstakes
                     break;
                 case 7:
                     Sweepstakes contestant7 = new Sweepstakes();
-                    contestant7.NextMethodOption3();
+                    contestant7.MarketingFirm();
+                    break;
+                case 8:
+                    Sweepstakes contestant8 = new Sweepstakes();
+                    contestant8.NextMethodOption3();
                     break;
                 default:
                     break;

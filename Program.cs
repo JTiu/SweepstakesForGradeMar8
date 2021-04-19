@@ -18,7 +18,7 @@ namespace NameSpaceSweepstakes
 
              optionPicked = startMenu.DrawMenu(); //
 
-            while (optionPicked != 7)
+            while (optionPicked != 8)
             {
                 Console.Clear();
                 //insert optionPicked into DirectUser in order to route user

@@ -192,6 +192,12 @@ namespace NameSpaceSweepstakes
             thisSweeps.GetSweepstakes();
             thisSweeps.Exit();
         }
+        public void MarketingFirm()
+        {
+            Console.WriteLine("This is the marketing firm with full ability to generate any option from this menu:\nRegister a Participant, Utilize Stack & Queue, anthing else!!");
+            Console.ReadLine();
+            Menu startMenu = new Menu();
+        }
         public void NextMethodOption3()
         {
             Console.WriteLine("next next next option??");

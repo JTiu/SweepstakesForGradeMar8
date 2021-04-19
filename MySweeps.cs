@@ -153,11 +153,16 @@ namespace SweepstakesFeb9
             foreach (string c in q) Console.Write(c + " ");
             Console.ReadLine();
             Console.ReadKey();
-
         }
         public void NextMethodOption1()
         {
             Console.WriteLine("next next option??");
+            Console.ReadLine();
+        }
+        public void PickWinner()
+        {
+            Console.WriteLine("Pick Winner: Anyone who plays, wins!");
+
             Console.ReadLine();
         }
     }

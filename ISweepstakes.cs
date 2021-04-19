@@ -13,6 +13,7 @@ namespace NameSpaceSweepstakes
         void GetSweepstakes();
         void GetStack();
         void GetQueue();
+        void PickWinner();
 
         void Welcome();
         void Exit();

@@ -33,6 +33,18 @@ namespace NameSpaceSweepstakes
             Console.ReadLine();
             return newParticipant;
         }
-        
-}
+        public RegisteredSweepsParticipant PickWinner()
+        {
+            RegisteredSweepsParticipant winner = new RegisteredSweepsParticipant();
+            winner.FirstName = UserInterface.GetUserFirstName();
+            winner.LastName = UserInterface.GetUserLastName();
+            winner.EmailAddress = UserInterface.GetUserEmailAddress();
+            winner.RegistrationID = UserInterface.GetUserRegistrationNumber();
+            winner.NextCourtDate = UserInterface.GetUserChoice();
+            Console.WriteLine("Sweepstakes Participant Info: First Name:   " + winner.FirstName + "     Last Name:  " + winner.LastName + ", Email:" + winner.EmailAddress + ";  Sweeps Choice: " + winner.NextCourtDate);
+            Console.ReadLine();
+            return winner;
+        }
+
+    }
 }

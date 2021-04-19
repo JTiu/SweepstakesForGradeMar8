@@ -121,7 +121,7 @@ namespace NameSpaceSweepstakes
         {
             
             Console.WriteLine("This app has an Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement 'ISweepstakes'.");
-            Console.WriteLine(); Console.WriteLine("First ISweepstakes Implementation, with a stack data stack structure: 'Welcome', 'Get', 'Insert' & 'Exit'");
+            Console.WriteLine(); Console.WriteLine("First ISweepstakes Implementation, with a stack data stack structure: 'Welcome', 'Get', 'Insert', 'Pick Winner', & 'Exit'");
             Console.ReadLine();
 
             MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
@@ -176,12 +176,13 @@ namespace NameSpaceSweepstakes
                 Console.ReadLine();
             }
             mySweepstakeClass.GetSweepstakes();
+            mySweepstakeClass.PickWinner();
             mySweepstakeClass.Exit();
             
         }
         public void ImplementacionCompleta()
         {
-            Console.WriteLine("Second Implementation ISweepstakes, with a Queue: 'Welcome', 'Get', 'Insert' & 'Exit'");
+            Console.WriteLine("Second Implementation ISweepstakes, with a Queue: 'Welcome', 'Get',  'Insert'. 'Pick Winner'& 'Exit'");
             Console.ReadLine();
             YourSweepstakes thisSweeps = new YourSweepstakes();
             thisSweeps.Welcome();
@@ -190,11 +191,12 @@ namespace NameSpaceSweepstakes
             QueueContestantInfo();
             Console.Clear();
             thisSweeps.GetSweepstakes();
+            thisSweeps.PickWinner();
             thisSweeps.Exit();
         }
         public void MarketingFirm()
         {
-            Console.WriteLine("This is the marketing firm with full ability to generate any option from this menu:\nRegister a Participant, Utilize Stack & Queue, anything else!!");
+            Console.WriteLine("This is the marketing firm with full ability to generate any option from this menu:\nRegister a Participant, Pick Winner, Utilize Stack & Queue, anything else!!");
             Console.ReadLine();
             Menu startMenu = new Menu();
         }

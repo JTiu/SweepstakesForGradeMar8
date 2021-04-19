@@ -157,6 +157,13 @@ namespace SweepstakesFeb9
             Console.WriteLine("next next option??");
             Console.ReadLine();
         }
+        public void PickWinner()
+        {
+            Console.WriteLine("Selecciona el nombre de la ganadora: ¡Cualquiera que juegue, gana!");
+
+            Console.ReadLine();
+        }
     }
 }
+
 

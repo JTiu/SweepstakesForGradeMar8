@@ -19,7 +19,7 @@ namespace SweepstakesFeb9
         public void GetSweepstakes()
         {
             // Program registers Participant here
-            Console.WriteLine("También puede 'YOUR SWEEPS', pero de una manera diferente!");
+            Console.WriteLine("También puede obtener 'YOUR SWEEPS', pero de una manera diferente!");
             Console.WriteLine("Tenemos YOUR SWEEPS aquí mismo!");
             Console.ReadLine();
         }

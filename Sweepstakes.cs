@@ -119,10 +119,10 @@ namespace NameSpaceSweepstakes
         }
         public void FullImplementation()
         {
-            Console.WriteLine("Implement 'Welcome', 'Get', 'Insert' & 'Exit' with a data stack");
-            Console.ReadLine();
+            
             Console.WriteLine("This app has an Interface'ISweepstakes'\nOther classes, 'MySweeps' and 'Your Sweeps', implement 'ISweepstakes'.");
-            Console.WriteLine();
+            Console.WriteLine(); Console.WriteLine("First ISweepstakes Implementation, with a stack data stack structure: 'Welcome', 'Get', 'Insert' & 'Exit'");
+            Console.ReadLine();
 
             MySweeps mySweepstakeClass = new MySweeps();  // Create a MySweeps object
             mySweepstakeClass.Welcome();
@@ -181,7 +181,7 @@ namespace NameSpaceSweepstakes
         }
         public void ImplementacionCompleta()
         {
-            Console.WriteLine("Implement 'Welcome', 'Get', 'Insert' & 'Exit' with a Queue");
+            Console.WriteLine("Second Implementation ISweepstakes, with a Queue: 'Welcome', 'Get', 'Insert' & 'Exit'");
             Console.ReadLine();
             YourSweepstakes thisSweeps = new YourSweepstakes();
             thisSweeps.Welcome();
@@ -194,7 +194,7 @@ namespace NameSpaceSweepstakes
         }
         public void MarketingFirm()
         {
-            Console.WriteLine("This is the marketing firm with full ability to generate any option from this menu:\nRegister a Participant, Utilize Stack & Queue, anthing else!!");
+            Console.WriteLine("This is the marketing firm with full ability to generate any option from this menu:\nRegister a Participant, Utilize Stack & Queue, anything else!!");
             Console.ReadLine();
             Menu startMenu = new Menu();
         }

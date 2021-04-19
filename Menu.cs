@@ -19,8 +19,8 @@ namespace NameSpaceSweepstakes
             Console.WriteLine("2. List all Participants, then register Participants [Create Dictionary, Register]");
             Console.WriteLine("3. Choose/Examine the Stack");
             Console.WriteLine("4. Choose/Examine the Queue");
-            Console.WriteLine("5. Implement Welcome, Insert, Get, Pick Winner, & Exit [ISweepstakes: Stack]");
-            Console.WriteLine("6. Implement Welcome, Insert, Get, Pick Winner & Exit [ISweepstakes: Queue]");
+            Console.WriteLine("5. Implement: Welcome, Insert, Get, Pick Winner, & Exit [ISweepstakes: Stack]");
+            Console.WriteLine("6. Implement: Welcome, Pick Winner & Exit [ISweepstakes: Queue]");
             Console.WriteLine("7. Marketing Firm");
             Console.WriteLine("8. Exit Application");
             bool invalidEntry = true; //this bool insures that an invalid entry is not entered

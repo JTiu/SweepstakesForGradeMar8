@@ -182,15 +182,15 @@ namespace NameSpaceSweepstakes
         }
         public void ImplementacionCompleta()
         {
-            Console.WriteLine("Second Implementation ISweepstakes, with a Queue: 'Welcome', 'Get',  'Insert'. 'Pick Winner'& 'Exit'");
+            Console.WriteLine("Second Implementation ISweepstakes, with a Queue: 'Welcome', 'Pick Winner' & 'Exit' ONLY");
             Console.ReadLine();
             YourSweepstakes thisSweeps = new YourSweepstakes();
             thisSweeps.Welcome();
-            thisSweeps.InsertSweepstakes();
+            //thisSweeps.InsertSweepstakes();
             Console.Clear();
             QueueContestantInfo();
             Console.Clear();
-            thisSweeps.GetSweepstakes();
+            //thisSweeps.GetSweepstakes();
             thisSweeps.PickWinner();
             thisSweeps.Exit();
         }
